@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    database: lego  
+    schema: raw  
+    tables:
+      - name: inventories
+      - name: inventory_parts
+      - name: inventory_sets
+      - name: inventory_minifigs
+      - name: sets
+      - name: colors
+      - name: themes
+      - name: minifigs
+      

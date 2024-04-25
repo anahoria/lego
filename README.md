@@ -32,3 +32,23 @@ and all the DDLs to crecreate the model are stored in this repository
 ```
 legoDB/DDLs
 ```
+
+## Hands on the model, understanding the tables
+
+There is 1 table with the global inventory which contains a single row for each inventory item. This table relates to other three with the detail about the parts, the sets and the minifig.
+
+![Tabla items por categoría](./img/tabla_inventory_categories.png)
+
+Following the list in order of volume, there is a tree that clasifies the inventory items in 8 categories.
+
+![Árbol items por categoría](./img/inventory_categories.svg)
+
+### Only sets
+
+This table contains all the inventory items in inventory_parts and not in inventory_minifigs or inventory_sets.
+
+28858 unique items in the inventory.
+
+
+
+
