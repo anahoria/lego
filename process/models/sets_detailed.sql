@@ -6,7 +6,11 @@ with source_data as (
 		t2.year as year,
 		t1.set_num as set_num,
 		t2.name as name,
+		t3.id as theme_id,
 		t3.name as theme_name,
+		case when t4.id is null
+		then t3.id 
+		else t4.id end as parent_theme_id,
 		case when t4.name is null
 		then t3.name 
 		else t4.name end as parent_theme_name,

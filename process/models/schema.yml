@@ -3,5 +3,3 @@ version: 2
 models:
   - name: inventory_categories
     description: This table has basic information about all the items in inventories table and the categories 
-  - name: not_in_parts
-    description: Items that are not listed in parts table
