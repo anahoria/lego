@@ -13,4 +13,9 @@ sources:
       - name: colors
       - name: themes
       - name: minifigs
+  - name: main
+    database: lego
+    schema: main
+    tables:
+      - name: color_treemap_simplified
       
