@@ -143,7 +143,21 @@ CREATE TABLE lego.raw.inventory_minifigs (
 	quantity BIGINT
 );
 
-
 COPY lego.raw.inventory_minifigs 
 FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/inventory_minifigs.csv.gz'
+(HEADER);
+
+
+-- Modificada a mano, no viene de rebrickable
+CREATE TABLE lego.main.color_treemap_simplified (
+	id BIGINT,
+	color_name VARCHAR,
+	rgb VARCHAR,
+	color_group VARCHAR,
+	group_rgb VARCHAR,
+	is_trans BOOLEAN
+);
+
+COPY lego.main.color_treemap_simplified
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/csv/color_treemap_simplified.csv'
 (HEADER);

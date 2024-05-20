@@ -32,3 +32,6 @@ DROP TABLE lego.raw.minifigs;
 
 
 DROP TABLE lego.raw.inventory_minifigs;
+
+-- Modificada a mano, no viene de rebrickable
+DROP TABLE lego.main.color_treemap;

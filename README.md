@@ -84,6 +84,8 @@ First of all, I constructed the family tree of the themes. It came up with tthee
 ![Hierarchy 3 levels](./img/three_levels.svg)
 
 
+
+
 ### Only colors
 
 The table with all the information about the sets by year can be completed with the colors of all the pieces present in the sets not counting the spare ones. Better perform a cumsum over the years.
@@ -96,6 +98,24 @@ When creating the table, it is important to fill every color every year with zer
 *flourish_colors.sql*
 
 <div class="flourish-embed flourish-scatter" data-src="visualisation/17788055"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+There is also an interesting thing to shoe, regardin the colors, we can group then into 19 groups
+
+*colors_simplified.sql*
+
+![colors in groups](./img/color_treemap_simplified.svg)
+
+but regarding the total number of pieces presents in sets along the years, the image is very diferent
+
+![colors in groups for sets over the years](./img/cumsum_color_simplified_by_year.svg)
+
+There is another interesting representation wich is the diference between showing the larger amount of pieces by color and by group color
+
+![max color and max group](./img/sets_with_max_color_and_group_color.svg)
+
+![max color and max group aligned](./img/sets_with_max_color_and_color_group_aligned.svg)
+
+
 
 
 

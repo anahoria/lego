@@ -33,4 +33,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   process:
     # Config indicated by + and applies to all files under models/example/
-      +materialized: table
+    themes:
+    +materialized: table
+    colors:
+    +materialized: table
+    inventory:
+    +materialized: table
+    sets:
+    +materialized: table
+    themes:
+    +materialized: table
+    
+

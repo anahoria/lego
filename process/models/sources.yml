@@ -1,5 +1,6 @@
 version: 2
 
+# Test types out of the box (unique, not_null, accepted_values and relationships)
 sources:
   - name: raw
     database: lego  
@@ -7,15 +8,248 @@ sources:
     tables:
       - name: inventories
       - name: inventory_parts
+        description: >
+          One record per inventory item and inventory part contained in item. 
+          Include all item developed by lego among the yaers.
+        columns:
+          - name: inventory_id 
+            type: bigint
+            description: >
+              Foreign key of the parts table. References inventory id.
+            tests:
+              - not_null
+              - relationships:
+                  to: source('raw', 'inventories')
+                  field: id
+          - name: part_num 
+            type: varchar
+            description: >
+              Foreign key of the parts table. References part number.
+            tests:
+              - not_null
+              - relationships:
+                  to: source('raw', 'parts')
+                  field: part_num
+          - name: color_id 
+            type: bigint
+            description: >
+              Foreign key of the parts table. References color id.
+            tests:
+              - not_null
+              - relationships:
+                  to: source('raw', 'colors')
+                  field: id
+          - name: quantity
+            type: bigint
+            description: >
+              Quantity of this part contained in the set.
+            tests:
+              - not_null
+          - name: is_spare
+            type: boolean
+            description: >
+              Indicates if the part, quantity and color is spare contained in the set.
+            tests:
+              - not_null
+              - accepted_values: 
+                  values: [True, False]
+          - name: img_url 
+            type: varchar
+            description: >
+              Url of the part image in rebrickable web.
+            tests:
+              - not_null
       - name: inventory_sets
+        description: >
+          One record per set that constitues a kit. Include all kits developed by lego among the yaers.
+        columns:
+          - name: inventory_id 
+            type: bigint
+            description: >
+              Foreign key of the inventories set table. References inventory id.
+            tests:
+              - not_null
+              - relationships:
+                  to: source('raw', 'inventories')
+                  field: id
+          - name: set_num 
+            type: varchar 
+            description: >
+              Foreign key of the inventories set table. References set number.
+            tests: 
+              - not_null
+              - relationships:
+                  to: source('raw', 'set_num')
+                  field: set_num
+          - name: quantity 
+            type: bigint
+            description: >
+              Quantity of this set contained in the kit.
+            tests:
+              - not_null
       - name: inventory_minifigs
       - name: sets
+        description: >
+          One record per set. Include all sets developed by lego among the yaers.
+        columns:
+          - name: set_num
+            type: varchar
+            description: >
+              Primary key of the sets table.
+            tests:
+              - unique
+              - not_null
+          - name: name
+            type: varchar
+            description: >
+              The name of the set. Descriptive.
+            tests:
+              - unique
+              - not_null
+          - name: year
+            type: bigint
+            description: >
+              Year of the launch of the set.
+            tests:
+              - not_null
+          - name: theme_id
+            type: bigint
+            description: Id of the theme of the family.
+            tests:
+              - relationships:
+                  to: ref('themes')
+                  field: id
+          - name: num_parts 
+            type: bigint
+            description: >
+              Number of lego parts contained in the set.
+          - name: img_url
+            type: varchar
+            description: >
+              Url of the set image in rebrickable web.
+            tests:
+              - not_null
       - name: colors
+        description: >
+          One record per color. Includes all colors used in the lego parts presents in sets developed by lego among the yaers.
+        columns:
+          - name: id
+            type: bigint
+            description: >
+              Primary key of the colors table.
+            tests:
+              - unique
+              - not_null
+          - name: color_name
+            type: varchar
+            description: >
+              The name of the color. Descriptive.
+            tests:
+              - not_null
+              - unique
+          - name: rgb
+            type: varchar
+            description: >
+              RGB refference of the color.
+            tests:
+              - not_null
+              - unique
+          - name: is_trans
+            type: boolean
+            description: >
+              Flag wich indicates if the part is transparent or not.
+            tests:
+              - not_null
+              - accepted_values: 
+                  values: [True, False]
       - name: themes
+        description: >
+          One record per theme. Includes all themes developed by lego among the years.
+        columns:
+          - name: id
+            type: bigint
+            description: > 
+              Primary key of the themes table.
+            tests:
+              - unique
+              - not_null
+          - name: name
+            type: varchar
+            description: >
+              The name of the theme. Descriptive.
+            tests:
+              - unique
+              - not_null
+          - name: parent_id 
+            type: bigint
+            description: > 
+              Self reference of the parent theme.
+            tests:
+              - relationships:
+                  to: ref('themes')
+                  field: id
       - name: minifigs
   - name: main
     database: lego
     schema: main
     tables:
       - name: color_treemap_simplified
+        description: >
+          Manually created table with relates colors with a high level group to measure al kinds of colors used.
+          As Red for al the colors containing the word red in their name.
+        columns:
+          - name: id
+            type: bigint
+            description: >
+              Primary key of the colors table.
+            tests:
+              - unique
+              - not_null
+              - relationships:
+                  to: source('raw', 'colors')
+                  field: id
+          - name: color_name
+            type: varchar
+            description: >
+              The name of the color. Descriptive.
+            tests:
+              - not_null
+              - unique
+              - relationships:
+                  to: source('raw', 'colors')
+                  field: name
+          - name: rgb
+            type: varchar
+            description: >
+              RGB refference of the color.
+            tests:
+              - not_null
+              - unique
+              - relationships:
+                  to: source('raw', 'colors')
+                  field: rgb
+          - name: color_group
+            type: varchar
+            description: >
+              This groups references an hierarchy manually defined to categorice colors by main component.
+              As Red for al the colors containing the word red in their name.
+            tests:
+              - not_null
+          - name: group_rgb
+            type: varchar
+            description: >
+              Selected RGB reference color for each group. It has to be in one of the colors of the group. Ideally the most representative one.
+            tests:
+              - not_null
+              - relationships:
+                  to: source('raw', 'colors')
+                  field: rgb
+          - name: is_trans
+            type: boolean
+            description: >
+              Flag wich indicates if the part is transparent or not.
+            tests:
+              - not_null
+              - accepted_values:
+                  values: [True, False]
       
