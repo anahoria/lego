@@ -43,11 +43,17 @@ Following the list in order of volume, there is a tree that clasifies the invent
 
 ![Árbol items por categoría](./img/inventory_categories.svg)
 
-### Only sets
+### Only sets and kits
 
-First study will focus only in sets.
+First study will focus only in sets. In paralell another study of kits is made.
 
-The main table is sets_detailed.
+The main tables are 
+
+$process/models/sets/sets_detailed.sql$
+
+and
+
+$process/models/kits/kits_detailed.sql$.
 
 ### sets_and_bigger_by_year
 
