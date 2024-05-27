@@ -10,7 +10,7 @@ with source_data as (
 	from 
         {{ ref("cumsum_colors_by_year") }} t1
 	left join 
-        {{ source("main", "color_treemap_simplified") }} t2
+        {{ source("main", "color_simplified") }} t2
 	on
 		t1.color_name = t2.color_name
 

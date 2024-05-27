@@ -149,7 +149,7 @@ FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/inventory_minifigs.csv.gz'
 
 
 -- Modificada a mano, no viene de rebrickable
-CREATE TABLE lego.main.color_treemap_simplified (
+CREATE TABLE lego.main.color_simplified (
 	id BIGINT,
 	color_name VARCHAR,
 	rgb VARCHAR,
@@ -159,5 +159,5 @@ CREATE TABLE lego.main.color_treemap_simplified (
 );
 
 COPY lego.main.color_treemap_simplified
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/csv/color_treemap_simplified.csv'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/csv/color_simplified.csv'
 (HEADER);

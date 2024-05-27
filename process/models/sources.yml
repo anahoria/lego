@@ -7,10 +7,34 @@ sources:
     schema: raw  
     tables:
       - name: inventories
+        description: >
+          One record per inventory item. 
+          Include all item developed by lego among the yers.
+        columns:
+          - name: id 
+            type: bigint
+            description: >
+              Primary key of the inventory table.
+            tests:
+              - not_null
+              - unique
+          - name: version 
+            type: bigint
+            description: >
+              Item version.
+            tests:
+              - not_null
+          - name: set_num 
+            type: varchar
+            description: >
+              Set number.
+            tests:
+              - not_null
+              - unique
       - name: inventory_parts
         description: >
           One record per inventory item and inventory part contained in item. 
-          Include all item developed by lego among the yaers.
+          Include all item developed by lego among the years.
         columns:
           - name: inventory_id 
             type: bigint
@@ -19,7 +43,7 @@ sources:
             tests:
               - not_null
               - relationships:
-                  to: source('raw', 'inventories')
+                  to: source('raw','inventories')
                   field: id
           - name: part_num 
             type: varchar
@@ -79,7 +103,7 @@ sources:
             tests: 
               - not_null
               - relationships:
-                  to: source('raw', 'set_num')
+                  to: source('raw', 'sets')
                   field: set_num
           - name: quantity 
             type: bigint
@@ -117,7 +141,7 @@ sources:
             description: Id of the theme of the family.
             tests:
               - relationships:
-                  to: ref('themes')
+                  to: source('raw', 'themes')
                   field: id
           - name: num_parts 
             type: bigint
@@ -186,14 +210,65 @@ sources:
               Self reference of the parent theme.
             tests:
               - relationships:
-                  to: ref('themes')
+                  to: source('raw', 'themes')
                   field: id
       - name: minifigs
+      - name: parts
+        description: >
+          One record per part. Includes parts developed by lego among the years.
+        columns:
+          - name: part_num
+            type: bigint
+            description: > 
+              Primary key of the parts table.
+            tests:
+              - unique
+              - not_null
+          - name: name
+            type: varchar
+            description: >
+              The name of the part.
+            tests:
+              - not_null
+              - unique
+          - name: part_cat_id
+            type: varchar
+            description: >
+              Foreign key of the parts_categories table. References part id.
+            tests:
+              - not_null
+              - relationships:
+                  to: source('raw', 'part_categories')
+                  field: id
+          - name: part_material
+            type: varchar
+            description: >
+              Description of the part material.
+            tests:
+              - not_null
+      - name: part_categories
+        description: >
+          One record per part categories. Includes all parts developed by lego among the years.
+        columns:
+          - name: id
+            type: bigint
+            description: > 
+              Primary key of the part category table.
+            tests:
+              - not_null
+              - unique
+          - name: name
+            type: varchar
+            description: > 
+              Name of the category in the part category table.
+            tests:
+              - not_null
+              - unique
   - name: main
     database: lego
     schema: main
     tables:
-      - name: color_treemap_simplified
+      - name: color_simplified
         description: >
           Manually created table with relates colors with a high level group to measure al kinds of colors used.
           As Red for al the colors containing the word red in their name.
