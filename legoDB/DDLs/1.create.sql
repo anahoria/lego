@@ -158,6 +158,6 @@ CREATE TABLE lego.main.color_simplified (
 	is_trans BOOLEAN
 );
 
-COPY lego.main.color_treemap_simplified
+COPY lego.main.color_simplified
 FROM '/Users/anamorenobarrado/lego/legoDB/raw/csv/color_simplified.csv'
 (HEADER);
