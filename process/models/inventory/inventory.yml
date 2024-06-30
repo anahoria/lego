@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: inventory_kpis_detailed
+    description: >
+      This model is the extension of the inventory_kpis (see definition).
+      Information about themes hierarchy and colors is provided.
+    columns:
+      - name: id
+      - name: year
+      - name: n_items
+      - name: num_parts
+      - name: set_num
+      - name: name
+      - name: set_img_url
+      - name: first_theme_id
+      - name: second_theme_id
+      - name: third_theme_id
+      - name: first_theme_name
+      - name: second_theme_name
+      - name: third_theme_name
+      - name: color_id
+      - name: color_name
+      - name: color_rgb
+      - name: color_group_id
+      - name: color_group_name
+      - name: color_group_rgb
+      - name: aux_n_color_parts
+      - name: aux_n_color_group_parts
+      - name: n_color_parts
+      - name: n_color_group_parts
+      - name: color_id_by_quantity
+      - name: color_group_id_by_quantity 
+  - name: inventory_kpis
+    description: >
+      This model contains the kpis count of sets and set with maximum number of pieces by year (see definition of inventory_count and inventory_max).
+    columns:
+      - name: id
+      - name: year
+      - name: n_items
+      - name: set_num
+      - name: num_parts
+  - name: inventory_count
+    description: >
+      This model contains the kpi count of sets by year (see definition of inventory_num).
+    columns:
+      - name: year
+      - name: n_items
+  - name: inventory_max
+    description: >
+      This model contains the set with the max number of pieces by year (see definition of inventory_num).
+      It is important to notice that several them es are filtered in order to keep only the main sets.
+      Theme_id not in:
+        '535-Collectible Minifigures'
+        '501-Gear'
+        '504-Duplo'
+        '497-Books'
+        '507-Educational and Dacta'
+        '365-System'
+      This filter is used because the list above contains a lot of minifigs, furnitures stationary,
+      books, little kids sets and educational sets wich contain a lot of pieces because their nature.
+    columns:
+      - name: id
+      - name: year
+      - name: num_parts
+      - name: set_num

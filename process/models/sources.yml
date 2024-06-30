@@ -2,8 +2,7 @@ version: 2
 
 # Test types out of the box (unique, not_null, accepted_values and relationships)
 sources:
-  - name: raw
-    database: lego  
+  - name: raw 
     schema: raw  
     tables:
       - name: inventories
@@ -265,7 +264,6 @@ sources:
               - not_null
               - unique
   - name: main
-    database: lego
     schema: main
     tables:
       - name: color_simplified
