@@ -14,12 +14,25 @@ with source_data as (
         parent_theme_name
     from 
         {{ ref("inventory_detailed") }}
-    where
-        theme_id != 507
+    where (
+        grandparent_theme_id is null  
+            or 
+        grandparent_theme_id not in (497, 501, 507, 277, 709)
+        )
+    and (
+        parent_theme_id is null  
+            or 
+        parent_theme_id not in (497, 501, 507, 277, 709)
+        )
+    and (
+        theme_id is null  
+            or 
+        theme_id not in (497, 501, 507, 277, 709)
+        )
+    and
+        year is not null
     and 
-        theme_id != 509
-    and 
-        theme_id != 398
+        lower(name) not like '%mosaic%'
     and 
         version = 1
     order by 

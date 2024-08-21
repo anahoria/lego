@@ -6,7 +6,9 @@ with aux1 as (
         t1.type,
         t1.set_num,
         t1.num_parts,
-        t2.theme_id
+        t2.theme_id,
+        t3.parent_id,
+        t4.parent_id as grandparent_id
     from 
         {{ ref("inventory_nums") }} t1
     left join
@@ -15,6 +17,15 @@ with aux1 as (
         t1.set_num = t2.set_num
     and
         t1.year = t2.year
+    left join
+        {{ source("raw", "themes") }} t3
+    on
+        t2.theme_id = t3.id
+    left join
+        {{ source("raw", "themes") }} t4
+    on
+        t3.parent_id = t4.id
+
 ), 
 aux2 as (
     select
@@ -26,8 +37,23 @@ aux2 as (
         num_parts    
     from 
         aux1
-    where 
-        theme_id not in (507, 510, 511, 517, 520, 529, 533, 534 )
+    where (
+        grandparent_id is null  
+            or 
+        grandparent_id not in (497, 501, 507, 277, 709)
+        )
+    and (
+        parent_id is null  
+            or 
+        parent_id not in (497, 501, 507, 277, 709)
+        )
+    and (
+        theme_id is null  
+            or 
+        theme_id not in (497, 501, 507, 277, 709)
+        )
+    and
+        year is not null
 ),
 source_data as (
     select

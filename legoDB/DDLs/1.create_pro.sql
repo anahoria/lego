@@ -8,7 +8,7 @@ CREATE TABLE legoPRO.raw.themes (
 
 
 COPY legoPRO.raw.themes
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/themes.csv.gz' (HEADER);
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/themes.csv.gz' (HEADER);
 
 
 CREATE TABLE legoPRO.raw."sets" (
@@ -22,7 +22,7 @@ CREATE TABLE legoPRO.raw."sets" (
 
 
 COPY legoPRO.raw."sets" 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/sets.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/sets.csv.gz'
 (HEADER);
 
 
@@ -34,7 +34,7 @@ CREATE TABLE legoPRO.raw.inventories (
 
 
 COPY legoPRO.raw.inventories 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/inventories.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/inventories.csv.gz'
 (HEADER);
 
 
@@ -46,7 +46,7 @@ CREATE TABLE legoPRO.raw.inventory_sets (
 
 
 COPY legoPRO.raw.inventory_sets 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/inventory_sets.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/inventory_sets.csv.gz'
 (HEADER);
 
 
@@ -57,7 +57,7 @@ CREATE TABLE legoPRO.raw.part_categories (
 
 
 COPY legoPRO.raw.part_categories 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/part_categories.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/part_categories.csv.gz'
 (HEADER);
 
 
@@ -70,7 +70,7 @@ CREATE TABLE legoPRO.raw.colors (
 
 
 COPY legoPRO.raw.colors 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/colors.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/colors.csv.gz'
 (HEADER);
 
 
@@ -83,7 +83,7 @@ CREATE TABLE legoPRO.raw.parts (
 
 
 COPY legoPRO.raw.parts 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/parts.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/parts.csv.gz'
 (HEADER);
 
 
@@ -96,7 +96,7 @@ CREATE TABLE legoPRO.raw.elements (
 
 
 COPY legoPRO.raw.elements 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/elements.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/elements.csv.gz'
 (HEADER);
 
 
@@ -111,7 +111,7 @@ CREATE TABLE legoPRO.raw.inventory_parts (
 
 
 COPY legoPRO.raw.inventory_parts 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/inventory_parts.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/inventory_parts.csv.gz'
 (HEADER);
 
 
@@ -123,7 +123,7 @@ CREATE TABLE legoPRO.raw.part_relationships (
 
 
 COPY legoPRO.raw.part_relationships 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/part_relationships.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/part_relationships.csv.gz'
 (HEADER);
 
 
@@ -136,7 +136,7 @@ CREATE TABLE legoPRO.raw.minifigs (
 
 
 COPY legoPRO.raw.minifigs
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/minifigs.csv.gz' (HEADER);
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/minifigs.csv.gz' (HEADER);
 
 
 CREATE TABLE legoPRO.raw.inventory_minifigs (
@@ -146,7 +146,7 @@ CREATE TABLE legoPRO.raw.inventory_minifigs (
 );
 
 COPY legoPRO.raw.inventory_minifigs 
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/inventory_minifigs.csv.gz'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/gz/PRO/20240705/inventory_minifigs.csv.gz'
 (HEADER);
 
 
@@ -161,5 +161,7 @@ CREATE TABLE legoPRO.main.color_simplified (
 );
 
 COPY legoPRO.main.color_simplified
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/csv/color_simplified.csv'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/csv/PRO/20240705/color_simplified.csv'
 (HEADER);
+
+COMMIT;

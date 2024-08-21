@@ -1,6 +1,14 @@
 version: 2
 
 models:
+  - name: inventory_detailed
+    description: >
+      This model is the extension of the inventory_num (see definition).
+      Information about themes hierarchy.
+  - name: inventory_detailed_with_parts
+    description: >
+      This model is the extension of the inventory_detailed (see definition).
+      Information about parts and colors is provided.
   - name: inventory_kpis_detailed
     description: >
       This model is the extension of the inventory_kpis (see definition).
@@ -51,12 +59,11 @@ models:
       This model contains the set with the max number of pieces by year (see definition of inventory_num).
       It is important to notice that several them es are filtered in order to keep only the main sets.
       Theme_id not in:
-        '535-Collectible Minifigures'
         '501-Gear'
-        '504-Duplo'
         '497-Books'
         '507-Educational and Dacta'
-        '365-System'
+        '277-Mosaic'
+        '709-LEGO Art'
       This filter is used because the list above contains a lot of minifigs, furnitures stationary,
       books, little kids sets and educational sets wich contain a lot of pieces because their nature.
     columns:

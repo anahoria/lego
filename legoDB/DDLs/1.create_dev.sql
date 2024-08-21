@@ -161,5 +161,5 @@ CREATE TABLE lego.main.color_simplified (
 );
 
 COPY lego.main.color_simplified
-FROM '/Users/anamorenobarrado/lego/legoDB/raw/csv/color_simplified.csv'
+FROM '/Users/anamorenobarrado/lego/legoDB/raw/csv/DEV/color_simplified.csv'
 (HEADER);

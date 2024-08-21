@@ -1,0 +1,453 @@
+"weight","source","target","step_from","step_to"
+245,only_child,City,1,2
+95,only_child,Belville,1,2
+110,only_child,Nexo Knights,1,2
+16,only_child,Monster Fighters,1,2
+18,only_child,LEGO Art,1,2
+5,only_child,Mindstorms,1,2
+7,only_child,Gabby's Dollhouse,1,2
+8,only_child,Alpha Team,1,2
+30,only_child,Building Set with People,1,2
+1,only_child,The Legend of Zelda,1,2
+21,only_child,Power Functions,1,2
+10,only_child,Minions,1,2
+44,only_child,Elves,1,2
+12,only_child,Hobby Sets,1,2
+2,only_child,The Powerpuff Girls,1,2
+38,only_child,Dreamzzz,1,2
+19,only_child,Znap,1,2
+462,only_child,Technic,1,2
+18,only_child,Model Team,1,2
+996,only_child,Star Wars,1,2
+185,only_child,Creator,1,2
+572,only_child,Ninjago,1,2
+21,only_child,Master Builder Academy,1,2
+13,Duplo,Toolo,0,1
+3,Duplo,Zooters,0,1
+26,Creator,X-Pod,1,2
+15,Disney,Mickey Mouse,1,2
+23,Collectible Minifigures,The LEGO Batman Movie Series 1,1,2
+86,Castle,Knights Kingdom II,1,2
+5,Aquazone,Aquasharks,1,2
+14,Castle,Dragon Knights,1,2
+11,Town,Arctic,1,2
+8,Castle,Classic Castle,1,2
+24,City,Hospital,1,2
+65,Train,"12V",1,2
+19,Collectible Minifigures,Series 4 Minifigures,1,2
+18,Sports,Hockey,1,2
+19,Collectible Minifigures,Series 11 Minifigures,1,2
+21,Collectible Minifigures,Series 10 Minifigures,1,2
+7,Castle,Forestmen,1,2
+166,Gear,Storage,1,2
+16,City,Mars Exploration,1,2
+6,Bionicle,Protectors,1,2
+12,Space,Spyrius,1,2
+16,Collectible Minifigures,Series 24 Minifigures,1,2
+120,City,Fire,1,2
+150,Books,Non-fiction Books,1,2
+17,Alpha Team,Mission Deep Sea,1,2
+16,Town,Race,1,2
+26,Adventurers,Desert,1,2
+18,Technic,Competition,1,2
+19,Space,UFO,1,2
+2,Studios,Jurassic Park III,1,2
+1,Advent,Belville,1,2
+67,Creator,Creator Expert,1,2
+20,Disney,Pirates of the Caribbean,1,2
+60,only_child,System,1,2
+9,only_child,Time Cruisers,1,2
+101,only_child,Jurassic World,1,2
+27,only_child,Modular Buildings,1,2
+104,only_child,FIRST LEGO League,1,2
+3,only_child,Sculptures,1,2
+35,only_child,Cars,1,2
+58,only_child,Exo-Force,1,2
+59,only_child,Legoland Parks,1,2
+33,only_child,Homemaker,1,2
+35,only_child,Town,1,2
+49,only_child,Disney,1,2
+105,only_child,Fabuland,1,2
+53,only_child,Studios,1,2
+10,Duplo,Little Forest Friends,0,1
+223,Gear,Role Play Toys and Costumes,1,2
+17,Technic,Throwbot Slizer,1,2
+4,Juniors,Ninjago,1,2
+53,Mindstorms,NXT,1,2
+16,Castle,Black Knights,1,2
+20,Collectible Minifigures,Series 20 Minifigures,1,2
+7,System,Jumbo Bricks,1,2
+11,Town,My Town,1,2
+10,Books,Technic,1,2
+25,Racers,RC,1,2
+4,Advent,Creator,1,2
+4,Disney,Planes,1,2
+200,City,Police,1,2
+134,Gear,Magnets,1,2
+45,Hero Factory,Heroes,1,2
+289,Gear,Video Games and Accessories,1,2
+12,Space,Galaxy Squad,1,2
+1,Legoland,Castle,1,2
+2,Advent,Castle,1,2
+14,Mindstorms,EV3,1,2
+10,Pirates,Pirates III,1,2
+19,Collectible Minifigures,Series 12 Minifigures,1,2
+85,Gear,Posters and Art Prints,1,2
+22,City,Harbor,1,2
+15,Power Functions,Powered Up,1,2
+6,Educational and Dacta,Soft Bricks,0,1
+3,Duplo,Sofia the First,0,1
+5,Aquazone,Stingrays,1,2
+90,Educational and Dacta,Mindstorms,0,1
+108,Super Heroes Marvel,Spider-Man,0,1
+77,only_child,Speed Champions,1,2
+1,only_child,Aquazone,1,2
+83,only_child,LEGO Ideas and CUUSOO,1,2
+162,only_child,Super Mario,1,2
+122,only_child,Mixels,1,2
+22,only_child,Boat,1,2
+9,only_child,Avatar,1,2
+183,only_child,Harry Potter,1,2
+24,only_child,"4 Juniors",1,2
+12,only_child,DC Super Hero Girls,1,2
+21,only_child,Value Packs,1,2
+8,only_child,The Lone Ranger,1,2
+4,only_child,Forma,1,2
+6,only_child,Angry Birds,1,2
+59,only_child,Monkie Kid,1,2
+188,only_child,Modulex,1,2
+31,Seasonal,Halloween,0,1
+14,Super Heroes DC,Superman,0,1
+11,Aquazone,Aquaraiders II,1,2
+1,Modular Buildings,Mini,1,2
+14,Legoland,Fire,1,2
+17,Promotional,Airlines,1,2
+92,Train,"4.5V",1,2
+75,Gear,Audio and Visual Media,1,2
+3,Mindstorms,Star Wars,1,2
+16,Collectible Minifigures,The Muppets,1,2
+22,Collectible Minifigures,Disney 100,1,2
+19,Collectible Minifigures,Series 3 Minifigures,1,2
+6,Space,Space Police I,1,2
+9,Space,Exploriens,1,2
+19,Collectible Minifigures,Series 16 Minifigures,1,2
+3,Castle,Dark Forest,1,2
+215,System,HO 1:87 Vehicles,1,2
+10,Spider-Man,Spidey and His Amazing Friends,1,2
+11,Space,M:Tron,1,2
+2,Harry Potter,Fantastic Beasts,1,2
+51,Star Wars,Ultimate Collector Series,1,2
+16,Collectible Minifigures,Series 21 Minifigures,1,2
+6,Disney,Toy Story,1,2
+11,Technic,Star Wars,1,2
+48,Technic,Expert Builder,1,2
+27,Castle,Lion Knights,1,2
+57,System,Town Plan,1,2
+37,Creator,Early Creator,1,2
+28,City,Stuntz,1,2
+19,Collectible Minifigures,The Simpsons Series 2,1,2
+18,Legoland,Airport,1,2
+18,Pirates,Pirates II,1,2
+65,Gear,Seasonal,1,2
+1,Town,Town Plan,1,2
+22,Advent,City,1,2
+4,Advent,Marvel,1,2
+33,Educational and Dacta,SPIKE,0,1
+8,Aquazone,Aquanauts,1,2
+53,Universal Building Set,Classic Basic,1,2
+62,City,Traffic,1,2
+4,Space,RoboForce,1,2
+37,City,Trains,1,2
+10,Space,Space Police II,1,2
+369,Educational and Dacta,Service Packs,0,1
+73,Educational and Dacta,Technic,0,1
+100,Duplo,Disney,0,1
+33,only_child,Juniors,1,2
+71,only_child,Super Heroes Marvel,1,2
+38,only_child,BrickLink Designer Program,1,2
+11,only_child,Sonic The Hedgehog,1,2
+278,only_child,Service Packs,1,2
+27,only_child,Indiana Jones,1,2
+26,only_child,Western,1,2
+166,only_child,Brickheadz,1,2
+19,only_child,Xtra,1,2
+66,only_child,Icons,1,2
+78,only_child,Classic,1,2
+32,only_child,Super Heroes DC,1,2
+31,only_child,Atlantis,1,2
+68,only_child,Dimensions,1,2
+52,only_child,Make & Create,1,2
+13,only_child,Island Xtreme Stunts,1,2
+27,only_child,Chinese Traditional Festivals,1,2
+124,Super Heroes Marvel,Avengers,0,1
+298,Educational and Dacta,Duplo and Explore,0,1
+2,Educational and Dacta,Building Set with People,0,1
+30,Educational and Dacta,Supplemental,0,1
+36,Educational and Dacta,Town,0,1
+9,Duplo,Marvel,0,1
+21,Seasonal,Valentine,0,1
+18,Duplo,Thomas & Friends,0,1
+8,Super Heroes Marvel,X-Men,0,1
+9,Duplo,Action Wheelers,0,1
+1,Advent,Pirates,1,2
+38,Mindstorms,RCX,1,2
+19,Collectible Minifigures,Series 6 Minifigures,1,2
+19,Collectible Minifigures,Series 7 Minifigures,1,2
+11,City,Off-Road,1,2
+22,Town,City Center,1,2
+6,Town,Launch Command,1,2
+4,Creator,Inventor,1,2
+26,Legoland,Building,1,2
+19,Collectible Minifigures,Series 14 Minifigures,1,2
+17,Promotional,Ferries,1,2
+4,Space,Unitron,1,2
+36,Hero Factory,Villains,1,2
+34,Disney,Frozen,1,2
+19,Collectible Minifigures,Series 5 Minifigures,1,2
+9,Legoland,Hospital,1,2
+3,Castle,Wolfpack,1,2
+204,Universal Building Set,Basic,1,2
+23,Technic,Universal Building Set,1,2
+21,Castle,Knights Kingdom I,1,2
+20,Collectible Minifigures,Series 18 Minifigures,1,2
+18,LEGO Brand Store,Cities of Wonders,1,2
+7,Sculptures,Mosaic,1,2
+22,Town,Space Port,1,2
+21,The Hobbit and Lord of the Rings,The Lord of the Rings,1,2
+11,Space,Ice Planet 2002,1,2
+25,City,Arctic,1,2
+23,Collectible Minifigures,The LEGO Movie II,1,2
+29,Technic,RoboRiders,1,2
+20,Collectible Minifigures,DC Super Heroes,1,2
+16,Space,Supplemental,1,2
+8,Super Heroes Marvel,Iron Man,0,1
+8,Seasonal,Thanksgiving,0,1
+69,Make & Create,Bricks & More,1,2
+21,Town,Paradisa,1,2
+10,Technic,Control Lab,1,2
+3,Disney,Miles From Tomorrowland,1,2
+199,Seasonal,Christmas,0,1
+103,only_child,Legends of Chima,1,2
+3,only_child,Stranger Things,1,2
+21,only_child,LEGO Originals,1,2
+56,only_child,Games,1,2
+39,only_child,Collectible Minifigures,1,2
+12,only_child,Dino Attack / Dino 2010,1,2
+8,only_child,Dino,1,2
+26,only_child,Unikitty!,1,2
+50,only_child,VIDIYO,1,2
+97,only_child,Educational and Dacta,1,2
+4,only_child,Fusion,1,2
+24,only_child,Teenage Mutant Ninja Turtles,1,2
+4,only_child,Speed Racer,1,2
+33,only_child,The LEGO Movie,1,2
+65,only_child,Freestyle,1,2
+6,only_child,Space,1,2
+2,Educational and Dacta,Samsonite,0,1
+18,Super Heroes DC,Justice League,0,1
+10,Adventurers,Jungle,1,2
+17,Collectible Minifigures,Marvel Series 2,1,2
+5,Technic,Speed Slammers,1,2
+16,Collectible Minifigures,Series 23 Minifigures,1,2
+11,Universal Building Set,Gears,1,2
+7,Batman,UCS,1,2
+28,Adventurers,Orient Expedition,1,2
+8,Juniors,Friends,1,2
+35,Ninjago,The LEGO Ninjago Movie,1,2
+100,Gear,Bag and Luggage Tags,1,2
+106,Train,"9V",1,2
+30,Space,Life On Mars,1,2
+23,Collectible Minifigures,The LEGO Ninjago Movie,1,2
+8,Juniors,Cars,1,2
+96,Universal Building Set,Supplemental,1,2
+214,Gear,Clocks and Watches,1,2
+32,LEGO Brand Store,Pick A Model,1,2
+20,Collectible Minifigures,Series 19 Minifigures,1,2
+19,Collectible Minifigures,The LEGO Movie,1,2
+23,Collectible Minifigures,The LEGO Batman Movie Series 2,1,2
+103,Books,Ideas Books,1,2
+5,Juniors,DC Comics Super Heroes,1,2
+5,Technic,eLAB,1,2
+19,Collectible Minifigures,Series 8 Minifigures,1,2
+43,Legoland,Construction,1,2
+452,Town,Classic Town,1,2
+149,System,Samsonite,1,2
+16,Collectible Minifigures,Looney Tunes,1,2
+44,Batman,The LEGO Batman Movie,1,2
+21,Disney,Cars,1,2
+6,only_child,Ben 10,1,2
+35,only_child,Hidden Side,1,2
+14,only_child,Agents,1,2
+50,only_child,Seasonal,1,2
+31,only_child,Ninja,1,2
+136,only_child,Bulk Bricks,1,2
+8,only_child,Brick Sketches,1,2
+8,only_child,Discovery,1,2
+143,only_child,Duplo,1,2
+175,only_child,Promotional,1,2
+141,only_child,Primo,1,2
+9,only_child,Animal Crossing,1,2
+2,only_child,Avatar: The Last Airbender,1,2
+5,Duplo,Dora the Explorer,0,1
+9,Educational and Dacta,Learning,0,1
+9,Duplo,DC Comics,0,1
+388,Duplo,Basic Set,0,1
+21,Educational and Dacta,Universal Building Set,0,1
+31,Duplo,Bob the Builder,0,1
+4,Legoland,Western,1,2
+1,Legoland,Coast Guard,1,2
+11,Sports,Gravity Games,1,2
+46,Gear,Tabletop Games and Puzzles,1,2
+371,Gear,Stationery and Office Supplies,1,2
+21,City,Farm,1,2
+36,Castle,Fantasy Era,1,2
+25,Collectible Minifigures,Harry Potter and Fantastic Beasts Series 1,1,2
+21,Town,Extreme Team,1,2
+21,Collectible Minifigures,Disney Series 2,1,2
+6,Legoland,Gas Station,1,2
+21,Collectible Minifigures,Disney Series 1,1,2
+28,Space,Blacktron II,1,2
+21,Racers,Promotional,1,2
+7,Castle,Black Falcons,1,2
+31,Legends of Chima,Speedorz,1,2
+19,Collectible Minifigures,DFB Minifigures,1,2
+88,City,Construction,1,2
+17,Technic,Supplemental,1,2
+76,Service Packs,Train,1,2
+9,Castle,Royal Knights,1,2
+16,Duplo,Castle,0,1
+6,Duplo,Dolls,0,1
+3,Legoland,Harbor,1,2
+254,Books,Story Books,1,2
+19,Promotional,McDonalds,1,2
+35,Sports,Basketball,1,2
+3,"4 Juniors",Spider-Man,1,2
+13,Advent,Friends,1,2
+2,Advent,Clikits,1,2
+76,Seasonal,Advent,0,1
+467,Duplo,Town,0,1
+175,Super Heroes DC,Batman,0,1
+10,only_child,Pharaoh's Quest,1,2
+7,only_child,Train,1,2
+10,only_child,Scooby-Doo,1,2
+4,only_child,Spybotics,1,2
+17,only_child,Rock Raiders,1,2
+9,only_child,Trolls: World Tour,1,2
+2,only_child,Ghostbusters,1,2
+5,only_child,Sports,1,2
+65,only_child,Universal Building Set,1,2
+2,only_child,Universe,1,2
+64,only_child,LEGO Exclusive,1,2
+474,only_child,Bionicle,1,2
+669,only_child,Gear,1,2
+60,Duplo,Playhouse,0,1
+10,Duplo,Western,0,1
+23,Duplo,Rattles,0,1
+23,Educational and Dacta,Serious Play,0,1
+16,Duplo,Little Robots,0,1
+5,Duplo,Jurassic World,0,1
+12,Legoland,Police,1,2
+38,Promotional,Bricktober,1,2
+12,Collectible Minifigures,Team GB,1,2
+16,Collectible Minifigures,Marvel Series 1,1,2
+9,Alpha Team,Mission Deep Freeze,1,2
+5,Town,Outback,1,2
+7,Disney,Prince of Persia,1,2
+82,Pirates,Pirates I,1,2
+52,Creator,Designer Sets,1,2
+4,Juniors,Marvel Super Heroes,1,2
+9,City,Cargo,1,2
+256,Creator,Creator 3-in-1,1,2
+375,Books,Activity Books with LEGO Parts,1,2
+531,System,Supplemental,1,2
+12,Town,Divers,1,2
+122,Other,Database Sets,1,2
+351,Gear,Houseware,1,2
+728,Gear,Key Chain,1,2
+3,Juniors,Jurassic World: Fallen Kingdom,1,2
+9,Space,Blacktron I,1,2
+18,Disney,Mickey & Friends,1,2
+47,Town,World City,1,2
+16,Collectible Minifigures,Series 25 Minifigures,1,2
+86,Town,Legoville,1,2
+15,Advent,Star Wars,1,2
+31,Legoland,Vehicle,1,2
+10,Space,Alien Conquest,1,2
+10,Racers,World Racers,1,2
+19,Collectible Minifigures,Series 15 Minifigures,1,2
+15,Architecture,Skylines,1,2
+10,City,Jungle,1,2
+99,Gear,Plush Toys,1,2
+42,The LEGO Movie,The LEGO Movie II,1,2
+13,Town,Res-Q,1,2
+21,Space,Space Police III,1,2
+19,Bionicle,Playsets,1,2
+4,Disney,Doc McStuffins,1,2
+7,Duplo,Princess Castle,0,1
+15,Super Heroes Marvel,Guardians of the Galaxy,0,1
+40,City,Airport,1,2
+434,Service Packs,Technic,1,2
+19,Collectible Minifigures,Series 17 Minifigures,1,2
+16,Collectible Minifigures,Series 22 Minifigures,1,2
+25,Castle,Kingdoms,1,2
+19,Collectible Minifigures,Series 1 Minifigures,1,2
+1,Train,Supplemental,1,2
+36,Christmas,Creator,1,2
+7,only_child,Factory,1,2
+13,only_child,Overwatch,1,2
+5,only_child,Despicable Me 4,1,2
+28,only_child,Power Miners,1,2
+34,only_child,Hero Factory,1,2
+147,only_child,Minecraft,1,2
+22,only_child,Galidor,1,2
+732,only_child,Friends,1,2
+83,only_child,Clikits,1,2
+74,only_child,Scala,1,2
+92,only_child,DOTS,1,2
+140,only_child,Other,1,2
+195,only_child,LEGO Brand Store,1,2
+52,only_child,Architecture,1,2
+16,only_child,Castle,1,2
+11,only_child,Quatro,1,2
+17,only_child,Dinosaurs,1,2
+15,only_child,SpongeBob SquarePants,1,2
+207,only_child,Racers,1,2
+19,only_child,Minitalia,1,2
+22,only_child,Toy Story,1,2
+9,only_child,Vikings,1,2
+50,Seasonal,Easter,0,1
+73,Duplo,Trains,0,1
+4,Duplo,Pirates,0,1
+16,Duplo,Dino,0,1
+17,Castle,Fright Knights,1,2
+15,Agents,Ultra Agents,1,2
+29,"4 Juniors",Jack Stone,1,2
+19,Collectible Minifigures,Harry Potter and Fantastic Beasts Series 2,1,2
+40,Town,Town Jr.,1,2
+1,Advent,Classic Basic,1,2
+25,The Hobbit and Lord of the Rings,The Hobbit,1,2
+37,Racers,Ferrari,1,2
+3,Legoland,Space,1,2
+21,Space,Mars Mission,1,2
+20,Space,Futuron,1,2
+40,Mindstorms,WeDo,1,2
+7,Disney,Jake and the Never Land Pirates,1,2
+212,Books,Activity Books,1,2
+16,Legends of Chima,Constraction,1,2
+19,Collectible Minifigures,The Simpsons Series 1,1,2
+109,Sports,Soccer,1,2
+19,Collectible Minifigures,Series 9 Minifigures,1,2
+119,Disney,Disney Princess,1,2
+105,Space,Classic Space,1,2
+19,Collectible Minifigures,Series 2 Minifigures,1,2
+28,City,Coast Guard,1,2
+19,Collectible Minifigures,Series 13 Minifigures,1,2
+19,Adventurers,Dino Island,1,2
+6,Advent,Harry Potter,1,2
+154,LEGO Brand Store,Monthly Mini Model Build,1,2
+16,Collectible Minifigures,Series 26 Minifigures,1,2
+3,Aquazone,Aquaraiders I,1,2
+18,Disney,Winnie the Pooh,1,2
+5,Juniors,Disney Princess,1,2
+19,Space,Insectoids,1,2
+7,Aquazone,Hydronauts,1,2
